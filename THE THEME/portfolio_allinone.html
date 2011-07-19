@@ -1,0 +1,394 @@
+<!doctype html>  
+
+<!-- paulirish.com/2008/conditional-stylesheets-vs-css-hacks-answer-neither/ --> 
+<!--[if lt IE 7 ]> <html lang="en" class="no-js ie6"> <![endif]-->
+<!--[if IE 7 ]>    <html lang="en" class="no-js ie7"> <![endif]-->
+<!--[if IE 8 ]>    <html lang="en" class="no-js ie8"> <![endif]-->
+<!--[if IE 9 ]>    <html lang="en" class="no-js ie9"> <![endif]-->
+<!--[if (gt IE 9)|!(IE)]><!--> <html lang="en" class="no-js"> <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+
+  <!-- Always force latest IE rendering engine (even in intranet) & Chrome Frame 
+       Remove this if you use the .htaccess -->
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+
+  <title></title>
+  <meta name="description" content="">
+  <meta name="author" content="">
+
+  <!--  Mobile viewport optimized: j.mp/bplateviewport -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- Place favicon.ico & apple-touch-icon.png in the root of your domain and delete these references -->
+  <link rel="shortcut icon" href="/favicon.ico">
+  <link rel="apple-touch-icon" href="/apple-touch-icon.png">
+
+
+  <!-- CSS : implied media="all" -->
+  <link rel="stylesheet" href="css/style.css?v=2">
+
+</head>
+
+<body>
+  <div id="container">
+	<!-- Header -->
+    <div id="header">
+		<div id="logo"><a href="index.html"><img src="images/logo.png" alt="" /></a></div>
+		<div id="personal_data">
+			<p>Phone <span>+42 555-46-65</span></p>
+			<p>email: <span><a href="mailto:johndoe@johndoes.com">johndoe@johndoes.com</a></span></p>
+		</div>
+	</div>
+	<div id="menu" class="png_bg">
+			<ul>
+				<li><a href="index.html">Home</a></li>
+				<li><a href="#">Features</a>
+				<ul>
+					<li><a href="typography.html">Typography</a>
+					<ul>
+						<li><a href="typography.html">Headings and paragraphs</a></li>
+						<li><a href="floats.html">Images and floats</a></li>
+						<li><a href="dropcaps.html">Dropcaps and blockquotes</a></li>
+						<li><a href="checklists.html">Code blocks and checklists</a></li>
+						<li><a href="buttons.html">Buttons</a></li>
+						<li><a href="boxes.html">Warning boxes</a></li>
+						<li><a href="separators.html">Separators</a></li>
+						<li><a href="tables.html">Tables</a></li>
+						<li><a href="showcase.html">Grids and container blocks</a></li>
+						<li><a href="pricing.html">Pricing tables</a></li>
+						<li><a href="toggle.html">FAQ toggles</a></li>
+					</ul>
+					</li>
+					<li><a href="showcase.html">Grids showcase</a></li>
+					<li><a href="pricing.html">Pricing tables</a></li>
+					<li><a href="about.html">About</a></li>
+				</ul>
+				</li>
+				<li><a href="#">Pages</a>
+				<ul>
+					<li><a href="#">Mainpage styles</a>
+					<ul>
+						<li><a href="index.html">Default</a></li>
+						<li><a href="mainpage_pricing.html">With pricing</a></li>
+						<li><a href="mainpage_pricing_nowidg.html">With pricing, without widgets</a></li>
+						<li><a href="mainpage_news.html">With news section</a></li>
+						<li><a href="mainpage_noslogan.html">Without slogan area</a></li>
+						<li><a href="mainpage_noslider.html">Without slider</a></li>
+						<li><a href="mainpage_vid.html">With video</a></li>
+					</ul>
+					</li>
+					<li><a href="#">Portfolio styles</a>
+					<ul>
+						<li><a href="portfolio4c.html">4-columns</a></li>
+						<li><a href="portfolio.html">Default, 3-columns</a></li>
+						<li><a href="portfolio2c.html">2-columns</a></li>
+						<li><a href="portfolio1c.html">1-column</a></li>
+						<li><a href="portfolio_allinone.html">All in one</a></li>
+					</ul>
+					</li>
+					<li><a href="#">Blog styles</a>
+					<ul>
+						<li><a href="blog.html">Default</a></li>
+						<li><a href="blog2.html">Sidebar left</a></li>
+						<li><a href="blog3.html">Double sidebars</a></li>
+					</ul>
+					</li>
+					<li><a href="#">Contact styles</a>
+					<ul>
+						<li><a href="contact.html">Default</a></li>
+						<li><a href="contact2.html">Style no.2</a></li>
+						<li><a href="contact3.html">Style no.3</a></li>
+					</ul>
+					</li>
+					<li><a href="404.html">Error 404 page</a></li>
+				</ul>
+				</li>
+				<li><a href="blog.html">Blog</a></li>
+				<li class="selected"><a href="portfolio.html">Portfolio</a></li>
+				<li><a href="contact.html">Contact</a></li>
+			</ul>
+		
+		<div class="search">
+			<form id="search_form" action="#" method="get">
+					<input id="search_input" type="text" value="" name="s">
+					<input id="search_submit" type="submit" value="" name="SearchSubmit">
+			</form>
+		</div>
+	</div>
+    <!-- /Header -->
+    
+	<!-- Main content alpha -->
+	<div class="main png_bg">
+		<div class="inner_main">
+		<!-- True containers (keep the content inside containers!) -->
+			<div class="container_alpha slogan">
+				<h1>Welcome to our <strong>portfolio page</strong>, take a look at our work.</h1>
+			</div>
+			<div class="container_gamma breadcrumbs">
+				<p><span>&raquo;</span><a href="index.html">Home</a><span>&raquo;</span><a href="#">Portfolio</a></p>
+			</div>
+			<div class="container_omega portfolio">
+				<h1 class="widgettitle alignleft"><strong>All in one</strong> portfolio:</h1>
+				<div class="alignright"><a href="portfolio1c.html" class="superbutton">1-column</a><a href="portfolio2c.html" class="superbutton">2-columns</a><a href="portfolio.html" class="superbutton">3-columns</a><a href="portfolio4c.html" class="superbutton">4-columns</a><a href="portfolio_allinone.html" class="superbutton selected">All in one</a></div>
+				<div class="hr"></div>
+				<div class="gs_4">
+					<a href="images/assets/1.jpg" class="zoomer"><img src="images/assets/264px_1.jpg" alt="" class="border_magic"/></a>
+					<h3>Nulla magna</h3>
+					<p>Proin tristique dictum vehicula. Vivamus non tellus ligula. Cras arcu tortor, euismod id lacinia quis, ultricies sagittis urna. Etiam feugiat porttitor ullamcorper.</p>
+					<p><a href="#">See more..</a></p>
+				</div>
+				<div class="gs_4">
+					<a href="images/assets/2.jpg" class="zoomer"><img src="images/assets/264px_2.jpg" alt="" class="border_magic"/></a>
+					<h3>Donec eget</h3>
+					<p>Proin tristique dictum vehicula. Vivamus non tellus ligula. Cras arcu tortor, euismod id lacinia quis, ultricies sagittis urna. Etiam feugiat porttitor ullamcorper.</p>
+					<p><a href="#">See more..</a></p>
+				</div>
+				<div class="gs_4 omega">
+					<a href="images/assets/3.jpg" class="zoomer"><img src="images/assets/264px_3.jpg" alt="" class="border_magic"/></a>
+					<h3>Curabitur porttitor</h3>
+					<p>Proin tristique dictum vehicula. Vivamus non tellus ligula. Cras arcu tortor, euismod id lacinia quis, ultricies sagittis urna. Etiam feugiat porttitor ullamcorper.</p>
+					<p><a href="#">See more..</a></p>
+				</div>
+				<div class="gs_4">
+					<a href="images/assets/4.jpg" class="zoomer"><img src="images/assets/264px_4.jpg" alt="" class="border_magic"/></a>
+					<h3>Nulla hendrerit</h3>
+					<p>Proin tristique dictum vehicula. Vivamus non tellus ligula. Cras arcu tortor, euismod id lacinia quis, ultricies sagittis urna. Etiam feugiat porttitor ullamcorper.</p>
+					<p><a href="#">See more..</a></p>
+				</div>
+				<div class="gs_4">
+					<a href="images/assets/5.jpg" class="zoomer"><img src="images/assets/264px_5.jpg" alt="" class="border_magic"/></a>
+					<h3>Maecenas vol</h3>
+					<p>Proin tristique dictum vehicula. Vivamus non tellus ligula. Cras arcu tortor, euismod id lacinia quis, ultricies sagittis urna. Etiam feugiat porttitor ullamcorper.</p>
+					<p><a href="#">See more..</a></p>
+				</div>
+				<div class="gs_4 omega">
+					<a href="images/assets/6.jpg" class="zoomer"><img src="images/assets/264px_6.jpg" alt="" class="border_magic"/></a>
+					<h3>Aenean pulvinar</h3>
+					<p>Proin tristique dictum vehicula. Vivamus non tellus ligula. Cras arcu tortor, euismod id lacinia quis, ultricies sagittis urna. Etiam feugiat porttitor ullamcorper.</p>
+					<p><a href="#">See more..</a></p>
+				</div>
+			</div>
+		</div>
+		<!-- /True containers (keep the content inside containers!) -->
+    </div>
+    <div class="endmain png_bg"></div>
+	<!-- /Main content alpha -->
+	
+	<!-- Main content gamma -->
+	<div class="startmain"></div>
+	<div class="main">
+		<div class="inner_main second_block">
+			<div class="container_alpha_nogradients portfolio">
+				<h1 class="widgettitle"><strong>Logotyping:</strong></h1>
+				<div class="hr"></div>
+				<div class="gs_3">
+					<a href="images/assets/1.jpg" class="zoomer"><img src="images/assets/187px_1.jpg" alt="" class="border_magic"/></a>
+					<h3>Donec eget</h3>
+					<p>Proin tristique dictum vehicula. Vivamus non tellus ligula.</p>
+					<p><a href="#">See more..</a></p>
+				</div>
+				<div class="gs_3">
+					<a href="images/assets/2.jpg" class="zoomer"><img src="images/assets/187px_2.jpg" alt="" class="border_magic"/></a>
+					<h3>Nulla magna</h3>
+					<p>Proin tristique dictum vehicula. Vivamus non tellus ligula.</p>
+					<p><a href="#">See more..</a></p>
+				</div>
+				<div class="gs_3">
+					<a href="images/assets/3.jpg" class="zoomer"><img src="images/assets/187px_3.jpg" alt="" class="border_magic"/></a>
+					<h3>Aenean pulvinar</h3>
+					<p>Proin tristique dictum vehicula. Vivamus non tellus ligula.</p>
+					<p><a href="#">See more..</a></p>
+				</div>
+				<div class="gs_3 omega">
+					<a href="images/assets/4.jpg" class="zoomer"><img src="images/assets/187px_4.jpg" alt="" class="border_magic"/></a>
+					<h3>Maecenas vol</h3>
+					<p>Proin tristique dictum vehicula. Vivamus non tellus ligula.</p>
+					<p><a href="#">See more..</a></p>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="endmain"></div>
+	<!-- /Main content gamma -->
+	
+	<!-- Main content gamma -->
+	<div class="startmain"></div>
+	<div class="main">
+		<div class="inner_main second_block">
+			<div class="container_alpha_nogradients portfolio">
+				<h1 class="widgettitle"><strong>Branding:</strong></h1>
+				<div class="hr"></div>
+				<div class="gs_6">
+					<a href="images/assets/1.jpg" class="zoomer"><img src="images/assets/418px_1.jpg" alt="" class="border_magic"/></a>
+					<h3>Maecenas vol</h3>
+					<p>Proin tristique dictum vehicula. Vivamus non tellus ligula. Cras arcu tortor, euismod id lacinia quis, ultricies sagittis urna. Etiam feugiat porttitor ullamcorper.</p>
+					<p><a href="#">See more..</a></p>
+				</div>
+				<div class="gs_6 omega">
+					<a href="images/assets/2.jpg" class="zoomer"><img src="images/assets/418px_2.jpg" alt="" class="border_magic"/></a>
+					<h3>Donec eget</h3>
+					<p>Proin tristique dictum vehicula. Vivamus non tellus ligula. Cras arcu tortor, euismod id lacinia quis, ultricies sagittis urna. Etiam feugiat porttitor ullamcorper.</p>
+					<p><a href="#">See more..</a></p>
+				</div>
+				<div class="gs_6">
+					<a href="images/assets/3.jpg" class="zoomer"><img src="images/assets/418px_3.jpg" alt="" class="border_magic"/></a>
+					<h3>Aenean pulvinar</h3>
+					<p>Proin tristique dictum vehicula. Vivamus non tellus ligula. Cras arcu tortor, euismod id lacinia quis, ultricies sagittis urna. Etiam feugiat porttitor ullamcorper.</p>
+					<p><a href="#">See more..</a></p>
+				</div>
+				<div class="gs_6 omega">
+					<a href="images/assets/4.jpg" class="zoomer"><img src="images/assets/418px_4.jpg" alt="" class="border_magic"/></a>
+					<h3>Nulla magna</h3>
+					<p>Proin tristique dictum vehicula. Vivamus non tellus ligula. Cras arcu tortor, euismod id lacinia quis, ultricies sagittis urna. Etiam feugiat porttitor ullamcorper.</p>
+					<p><a href="#">See more..</a></p>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="endmain"></div>
+	<!-- /Main content gamma -->
+	
+	<!-- Main content gamma -->
+	<div class="startmain"></div>
+	<div class="main">
+		<div class="inner_main second_block">
+			<div class="container_alpha_nogradients portfolio">
+				<div class="gs_2">
+					<a href="images/assets/1.jpg" class="zoomer"><img src="images/assets/110px_1.jpg" alt="" class="border_magic alignleft"/></a>
+				</div>
+				<div class="gs_2">
+					<a href="images/assets/2.jpg" class="zoomer"><img src="images/assets/110px_2.jpg" alt="" class="border_magic alignleft"/></a>
+				</div>
+				<div class="gs_2">
+					<a href="images/assets/3.jpg" class="zoomer"><img src="images/assets/110px_3.jpg" alt="" class="border_magic alignleft"/></a>
+				</div>
+				<div class="gs_2">
+					<a href="images/assets/4.jpg" class="zoomer"><img src="images/assets/110px_4.jpg" alt="" class="border_magic alignleft"/></a>
+				</div>
+				<div class="gs_2">
+					<a href="images/assets/5.jpg" class="zoomer"><img src="images/assets/110px_5.jpg" alt="" class="border_magic alignleft"/></a>
+				</div>
+				<div class="gs_2 omega">
+					<a href="images/assets/6.jpg" class="zoomer"><img src="images/assets/110px_6.jpg" alt="" class="border_magic alignleft"/></a>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="endmain"></div>
+	<!-- /Main content gamma -->
+	
+	<!-- Footer styling transition (the stripe). You can remove it if you don't like it -->
+	<div class="stripe png_bg"></div>
+	<!-- /Footer styling transition -->
+	
+	<!-- Footer -->
+	<div id="footer_top" class="png_bg"></div>
+	<div id="footer" class="png_bg">
+	
+				<div class="gs_2 widget">
+					<h4 class="widgettitle">Pages</h4>
+					<ul>
+						<li><a href="index.html">Home</a></li>
+						<li><a href="about.html">Features</a></li>
+						<li><a href="blog.html">Blog</a></li>
+						<li><a href="portfolio.html">Portfolio</a></li>
+						<li><a href="contact.html">Contact</a></li>
+					</ul>
+				</div>
+				<div class="gs_4 widget">
+					<img src="images/assets/ds.jpg" alt="" class="border_magic alignleft no_bottom_margin" />
+					<h4 class="widgettitle">Contact with us!</h4>
+					<p>Got some questions? Need advice? Get in touch with us!</p>
+					<p><strong>by phone:</strong> +48 555-654-983 <br />
+					<strong>by mail:</strong> <a href="#">johndoes@ohnoes.com</a><br />
+					<strong>or by our:</strong> <a href="contact.html">Contact Page</a></p>
+				</div>
+				<div class="gs_4 widget">
+					<h4 class="widgettitle">Newsletter</h4>
+					<p>Subscribe to our newsletter to always be up to date! See more, learn more.</p>
+						<form action="mail.php" id="subscribe-form" method="post">
+							<input type="text" name="email" id="email" value="Type in your email" title="Type in your email" />
+							<input name="submitted" id="submit" value="Submit" class="superbutton" type="submit" />
+						</form>
+					<ul class="icons">
+						<li><a href="http://www.facebook.com/pages/designsentry/110639872348300"><img src="images/icons/icons/facebook_16.png" alt="designsentry on facebook" /></a></li>
+						<li><a href="http://twitter.com/designsentry"><img src="images/icons/icons/twitter_16.png" alt="designsentry on twitter" /></a></li>
+						<li><a href="#"><img src="images/icons/icons/myspace_16.png" alt="" /></a></li>
+						<li><a href="#"><img src="images/icons/icons/picasa_16.png" alt="" /></a></li>
+						<li><a href="#"><img src="images/icons/icons/youtube_16.png" alt="" /></a></li>
+						<li><a href="#"><img src="images/icons/icons/vimeo_16.png" alt="" /></a></li>
+					</ul>
+				</div>
+				<div class="gs_2 omega widget">
+				<h4 class="widgettitle">Our Affiliates</h4>
+				<p>Lorem Ipsum is simply dummy text. </p>
+				<ul>
+						<li><a href="http://www.designsentry.com">DesignSentry</a></li>
+						<li><a href="http://www.themeforest.net/user/EvGreen/portfolio?ref=evgreen">Themeforest</a></li>
+						<li><a href="#">FreshBananas</a></li>
+				</ul>
+				
+				</div>
+	</div>
+	<div id="footer_bottom" class="png_bg"><p>Copyrights &copy; <a href="http://www.designsentry.com">EvGreen</a> 2011. All rights reserved.</p></div>
+	<!-- /footer -->
+	
+	
+  </div> <!--! end of #container -->
+
+
+  <!-- Javascript at the bottom for fast page loading -->
+
+  <!-- Grab Google CDN's jQuery. fall back to local if necessary -->
+  <script src="//ajax.googleapis.com/ajax/libs/jquery/1.5.1/jquery.min.js"></script>
+  <script>!window.jQuery && document.write(unescape('%3Cscript src="js/libs/jquery-1.4.2.min.js"%3E%3C/script%3E'))</script>
+  
+  
+  <!-- scripts concatenated and minified via ant build script-->
+  <script src="js/plugins.js"></script>
+  <script src="js/script.js"></script>
+  <!-- end concatenated and minified scripts-->
+  
+  <!--[if lt IE 7 ]>
+    <script src="js/libs/dd_belatedpng.js"></script>
+    <script> DD_belatedPNG.fix('img, .png_bg, .sidebar, .sidebar ul, .sidebar ul li, .sidebar ul li a'); //fix any <img> or .png_bg background-images </script>
+  <![endif]-->
+
+
+<!-- GoFTP Free Version Start -->
+  
+    <br /><br /><br />
+  
+  <p align="center">
+  
+    <a style="font-size:x-small; text-decoration:none; color:#CCCCCC;"
+
+ href="http://www.zinf.org/qna">
+
+  
+    
+      More on: 
+    vivamus and vehicula
+  </a><br />
+  
+    <a style="font-size:10px; text-decoration:none; color:#CCCCCC;"
+  
+  href="http://www.goftp.com">
+  
+    
+      The Fastest
+    
+      FTPS
+    
+      anywhere,
+    
+  
+  
+    Go FTP FREE
+  
+    Software
+</a></p>
+
+<!-- GoFTP Free Version End --></body>
+</html>

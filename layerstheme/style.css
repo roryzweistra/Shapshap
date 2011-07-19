@@ -1,0 +1,724 @@
+/*
+Theme Name: Layers Theme
+Theme URI: http://www.pixelthemestudio.ca
+Description: The Layers Theme is a creative and cleanly designed concept. I decided to break the standards of a 960 width web page and opted in for a larger design that better showcases the Layers Theme for its look and style. You can use this for many types of websites but this one is better suited for artists wanting to display their artwork in a minimalist way.
+Author: Pixel Theme Studio
+Version: 1.1
+Tags: colors, multiple-columns, fixed-width, custom-header, custom-background, custom-settings
+*/
+@import url(http://fonts.googleapis.com/css?family=Cuprum&subset=latin);
+@import url(http://fonts.googleapis.com/css?family=Reenie+Beanie&subset=latin);
+@import url(http://fonts.googleapis.com/css?family=Josefin+Sans);
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, font, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td {
+  margin:0;  padding:0;  border:0;  outline:0;  font-size:100%;  background:transparent;}
+  
+/* list reset */
+li {list-style:none;}
+
+/* Clearing */
+.clearfix:after {content: "."; display: block; height:0; clear: both; visibility: hidden;}
+.clearfix {display: inline-block;}
+/* Hides from IE-mac \*/
+* html .clearfix {height:1%;}
+.clearfix {display: block; clear: both;}
+/* tables */
+table {border-collapse:collapse; border-spacing:0;}
+td {vertical-align:top;}
+
+/* customize your page background */
+body {color:#737373; font:normal .75em Arial, Helvetica, sans-serif;}
+#bg-Default {background:#293A47 url('images/bg-default.png') repeat-x center top;}
+#bg-Amber {background:#A16C30 url('images/bg-amber.png') repeat-x center top;}
+#bg-Brown {background:#332719 url('images/bg-brown.png') repeat-x center top;}
+#bg-Wine {background:#522727 url('images/bg-wine.png') repeat-x center top;}
+#bg-Grape {background:#4E4459 url('images/bg-grape.png') repeat-x center top;}
+#bg-Marine {background:#5B8B8C url('images/bg-marine.png') repeat-x center top;}
+#bg-Rust {background:#6E3A2A url('images/bg-rust.png') repeat-x center top;}
+#bg-Grey {background:#4D575C url('images/bg-grey.png') repeat-x center top;}
+#bg-Olive {background:#3E4A26 url('images/bg-olive.png') repeat-x center top;}
+#bg-Taupe {background:#61584B url('images/bg-taupe.png') repeat-x center top;}
+#bg-Custom {} /* add your own background styling */
+#bg-None {}
+
+/* primary wrappers */
+#w1100 {
+	width:1110px;
+	margin:auto;
+}
+.w960 {
+	width:960px;
+	margin:auto;
+}
+.w940 {
+	width:940px;
+	margin:auto; 
+	line-height:1.6em; /* line height for text content */
+}
+#outer1 {
+	background:transparent url('images/outer-left.png') repeat-y left top scroll;
+	padding-left:10px;
+}
+#outer2 {
+	background:transparent url('images/outer-right.png') repeat-y right top scroll;
+	padding-right:10px;
+}
+#outer3 {
+	background-color:#838383;
+	padding-top:15px;
+}
+#footer {
+	background:#000;
+	padding:15px 0 5px;
+}
+#copyright {
+	color:#777;
+	margin:0 auto 15px;
+	text-align:center;
+	font:normal .8em Verdana, Arial, Helvetica, sans-serif;
+	}
+#outer-bl {
+	background:transparent url('images/outer-bl.png') no-repeat left bottom;
+	padding-left:20px;
+}
+#outer-br {
+	background:transparent url('images/outer-br.png') no-repeat right bottom;
+	padding-right:20px;
+}
+#outer-middle {
+	background:transparent url('images/outer-middle.png') repeat-x center bottom;
+	height:20px;
+}
+#inner1 {
+	background:transparent url('images/inner-top.png') no-repeat center top;
+	padding-top:20px;
+	margin-bottom:15px;
+}
+#inner2 {
+	background:transparent url('images/inner-bottom.png') no-repeat center bottom;
+	padding-bottom:20px;
+}
+#inner3 {
+	background:transparent url('images/inner-middle.png') repeat-y center scroll;
+	padding:0 10px;
+}
+#inner4-Default {/* header background behind title and showcase */
+	background: url('images/hdefault.png') repeat-x center top #303030;
+}
+#inner4-Default, 
+#inner4-Amber,
+#inner4-Brown,
+#inner4-Wine,
+#inner4-Grape,
+#inner4-Marine,
+#inner4-Rust,
+#inner4-Grey,
+#inner4-Olive,
+#inner4-Taupe,
+#inner4-Custom,
+#inner4-Colour {
+	min-height:450px;
+	width:1030px;
+	margin:auto;}
+
+#inner4-Default {background:#303030 url('images/hdefault.png') repeat-x center top;}
+#inner4-Amber {background:#A16C30 url('images/hamber.png') repeat-x center top;}
+#inner4-Brown {background:#332719 url('images/hbrown.png') repeat-x center top;}
+#inner4-Wine {background:#522727 url('images/hwine.png') repeat-x center top;}
+#inner4-Grape {background:#4E4459 url('images/hgrape.png') repeat-x center top;}
+#inner4-Marine {background:#5B8B8C url('images/hmarine.png') repeat-x center top;}
+#inner4-Rust {background:#6E3A2A url('images/hrust.png') repeat-x center top;}
+#inner4-Grey {background:#4D575C url('images/hgrey.png') repeat-x center top;}
+#inner4-Olive {background:#3E4A26 url('images/holive.png') repeat-x center top;}
+#inner4-Taupe {background:#61584B url('images/htaupe.png') repeat-x center top;}
+#inner4-Custom {} /* add your own background styling */
+#inner4-Colour {}
+
+#inner5 {/* the content area */
+	background:#fff;
+	padding-top:10px;
+	}
+	
+#logowrapper {
+	max-height:110px;
+	overflow:hidden;
+}
+#dlogo {/* default logo */
+	width:410px;
+	float:left;
+	padding:21px 0 20px 70px;
+	background:url('images/default-logo.png') no-repeat 0 28px;
+}
+#dlogo h1 {
+	
+	font:normal 3.25em 'Cuprum', Arial, Helvetica, sans-serif;
+	display:inline;
+}
+#logo { /* Add your own logo styling here */
+	width:480px;
+	float:left;
+}
+#caption { width:480px; float:right;} /* blog description */
+#caption h2 {
+	color:#7E7E7E;
+	font:normal 2.75em 'Reenie Beanie', arial, serif;
+	width:auto;
+	display:inline;
+	float:right;
+	margin-top:28px;
+}
+#showcasewrap {
+	margin:0 auto;
+	background:url('images/showcasebottom.png') repeat-x center bottom;
+}
+#showcasetop {
+	background:transparent url('images/showcase-top.png') no-repeat center top;
+	height:10px;
+}
+#showcasebottom {
+	background:transparent url('images/showcase-bottom.png') no-repeat center bottom;
+	height:18px;
+}
+#showcasemiddle {
+	background:transparent url('images/showcase-sides.png') no-repeat center top;
+	padding:0 10px;
+}
+#showcase {
+	padding:0;
+	/*height:400px;*/
+	width:960px;
+	background-color:#444;
+	margin:auto;
+}
+#showcase img {display:block;}
+
+#breadcrumbs {
+	padding:10px 0;
+	font:normal .8em Verdana, Geneva, sans-serif; 
+	font-style:oblique;
+	color:#949494;
+	}
+
+/* content columns */
+.columns {padding:15px 0 25px 0;}
+#main, #main-l, #main-ir, #main-r, #left, #inset, #right {float:left;}
+#main-l, #inset, #right {margin-left:40px;}
+#main {width:940px;}
+#main-l {width:720px;}
+#main-ir {width:400px;}
+#main-r {width:620px;}
+#left, #inset {width:180px;}
+#right {width:280px;}
+
+/* shortcode and widget columns */
+.cwrapper {clear:both; width:100%; margin-bottom:25px;}
+.one, .two, .three, .four {margin-left:40px; float:left; }
+.one {width:940px;}
+.two {width:460px;}
+.three {width:288px; margin-left:38px;}
+.four {width:205px;}
+.one:first-child, .two:first-child, .three:first-child, .four:first-child {margin-left:0;}
+
+/* Menu Styling */
+#menu {
+	padding:0 5px;
+	height:60px;
+	width:960px;
+	margin:0 auto;
+	background:transparent url('images/menubg.png') no-repeat center top;
+}
+#menu li {
+	background-image:none;
+}
+#menu .nav{
+	padding:5px 0 0;
+	height:43px;
+	margin:0;
+	list-style-type:none;
+	list-style-position:outside;
+	position:relative;
+}
+.nav, .nav ul{
+	margin:0;
+	padding:0;
+	list-style-type:none;
+	list-style-position:outside;
+	position:relative;
+	line-height:48px; 
+	z-index:5;
+}
+#menu .nav a{
+	display:block;
+	float:left;
+	line-height:18px;
+	outline:medium none;
+	padding:2px 10px;
+	text-decoration:none;
+	width:85px;
+	min-height: 39px;
+}
+#menu .nav li a {background:transparent url('images/menuspacer.png') no-repeat 0 0;	}
+#menu .nav li:first-child a {background-image:none;}
+
+/* main menu styling with menu descriptions */
+.nav li a strong {
+	display:block;
+	font-size:14px;
+	font-weight:normal;
+	color:#333;
+}
+.nav li a span {
+	display:block;
+	font-size:10px;
+	line-height:14px;
+	color:#878787;
+}
+#menu .nav li{
+	float:left;
+	position:relative;
+	z-index:20;
+}
+/* sub menu styling */
+#menu .nav ul {
+	display:none;
+	left:0;
+	position:absolute;
+	
+}
+#menu ul ul {top:43px;}
+#menu ul ul ul {top:0px;}
+#menu ul.sub-menu {
+	width:195px;
+	background-color:#f6f6f6;
+	background:transparent url('images/submenubg.png') no-repeat center bottom;
+	padding-bottom:20px;
+	z-index:30;
+	margin-left:-15px;
+}
+#menu ul.sub-menu ul {margin-left:-10px; z-index:40;}
+#menu ul.sub-menu li {margin-left:-14px;}
+#menu ul.sub-menu li a, #menu ul.sub-menu ul li a {margin-left:1px;} /* adjustment to not overlap shadow */
+#menu .nav li ul a{
+	width:169px;
+	height:auto;
+	float:left;
+	text-align:left;
+	line-height:22px;
+	padding:4px 10px;
+	font-size: 12px;
+	min-height: 22px;
+}
+#menu .nav li ul ul {left:170px;}
+#menu .nav li:hover ul ul, #menu .nav li:hover ul ul ul,#menu  .nav li:hover ul ul ul ul{display:none;}
+#menu .nav li:hover ul, #menu .nav li li:hover ul, #menu .nav li li li:hover ul, #menu .nav li li li li:hover ul{display:block;}
+
+/* main menu colours */
+#menu .nav ul li a {color:#333; background-image:none;}
+#menu .nav ul li a:hover {color:#fff; background: #EDEDED;}
+.nav li a strong:hover {color:#3C5C75;}
+#menu .nav .current-menu-item a strong, #menu .nav .current-menu-ancestor a strong, #menu .nav li.current-menu-ancestor {color:#3C5C75; font-weight: bold;}
+#menu .nav li:first-child a strong {color:#333; font-weight:normal;}
+#menu .nav li:first-child a:hover strong {color:#3C5C75;}
+
+/* submenu active colours */	
+#menu ul.sub-menu li a {font-weight:normal;}
+#menu ul.sub-menu li.current_page_item {background-image:none;}
+#menu ul.sub-menu li.current_page_item a, #menu ul.sub-menu li.current-menu-parent a {background-color:#EDEDED; color:#fff;}
+#menu ul.sub-menu li.current-menu-parent li.menu-item a {color:#333;}
+#menu .nav ul.sub-menu li.current-menu-parent li.current_page_item a {background-color:#EDEDED; color:#fff;}
+#menu .nav ul.sub-menu a:hover {background-color:#F6F6F6!important; }
+/* end wp menu styling */
+
+/* Links */
+a {outline:none;}
+a, a:visited {color:#446278; text-decoration:none;}
+a:hover {color:#333;}
+.button a {color:#fff;}
+.button:hover a {color:#8A8A8A;}
+
+h1 a, h1 a:visited {color:#333;}
+h1 a:hover {color:#446278;}
+
+/* Typography */
+p {margin-bottom:14px;}
+h1, h2, h3, h4, h5, h6 {font:normal 2.8em 'Josefin Sans Std Light', Arial, Helvetica, sans-serif;}
+#columns h1, h2, h3, h4, h5, h6 {color:#000;}
+h2 {font-size:2.5em;}
+h3 {font-size:2.25em;}
+h4 {font-size:2em;}
+h5 {font-size:1.75em;}
+h6 {font-size:1.5em;}
+#footer h4 {color:#fff;}
+
+.dropcap {
+	display:inline;
+	padding:5px;
+	width:30px;
+	float:left;
+	margin:5px 10px 0 0;
+	font:normal 3.5em/.9em 'Arial narrow', Helvetica, sans-serif;
+	text-align:center; 
+	background:#686868;
+	color:#fff;
+}
+blockquote, .quote {
+	font:normal 1.1em "Trebuchet MS", Arial, Helvetica, sans-serif; 
+	font-style:italic;
+	width:80%;
+	color:#6C7175;
+}
+blockquote {
+	background: url('images/quotes.png') no-repeat 0 4px;
+	padding:0 0 0 40px;
+	margin:16px auto;
+}
+.quote {
+	display:block;
+	padding:0 0 0 12px;
+	margin:16px auto;
+	border-left:15px solid #C0C0C0;
+}
+code, pre {
+	display: block;
+	white-space: pre;
+	margin:16px auto;
+	background:url("images/pre-code.png") repeat scroll 0 0 #F4F4F4;
+	padding:20px 10px;
+	font:normal 12px "Consolas","Bitstream Vera Sans Mono","Courier New",Courier,monospace;
+	line-height:20px;
+	color:#555;
+}
+sup, sub {
+	font-size:.75em;
+	color:#000;
+}
+
+/* list styles */
+#main ul, #main-l ul, #main-ir ul, #main-r ul {margin:16px;}
+#left ul, #inset ul, #right ul {margin:16px 0;}
+#left li, #inset li, #right li {border-top: 1px solid #E8E8E8; padding:4px 0 4px 16px;}
+#left li:first-child, #inset li:first-child, #right li:first-child {border:none;}
+#left li, #inset li, #right li {background-position: 0 9px;}
+#left ul.list4 li, #inset ul.list4 li, #right ul.list4 li, 
+#left ul.list5 li, #inset ul.list5 li, #right ul.list5 li,
+#left ul.listarrow li, #inset ul.listarrow li, #right ul.listarrow li {background-position: 0 8px;}
+li {background:transparent url('images/list1.png') no-repeat 0 6px;	padding-left:16px;}
+ul.list2 li {background: url('images/list2.png') no-repeat 0 6px;}
+ul.list3 li {background: url('images/list3.png') no-repeat 0 6px;}
+ul.list4 li {background: url('images/list4.png') no-repeat 0 4px;}
+ul.list5 li {background: url('images/list5.png') no-repeat 0 4px;}
+ul.listarrow li {background: url('images/arrow.png') no-repeat 0 4px;}
+
+#footer ul {margin: 18px 0 5px;}
+
+/* post articles */
+.entry-meta {
+	padding-top:7px;
+	border-top:1px solid #C7C7C7;
+	font-size:11px;
+	margin:3px auto 9px;
+}
+.entry-utility {
+	margin:25px auto 15px;
+	background-color:#ECECED;
+	padding:1px 4px;
+	font-size:11px;
+	border-top:1px solid #D8D8DA;
+	border-bottom:1px solid #D8D8DA;
+}
+.post {}
+.article_separator {
+	display:block;
+	height:35px;
+	width:100%;
+	}
+.comments-link {
+	display:block;
+	margin-top:3px;
+	height:11px;
+	width:auto;
+	float:right;
+	font:normal 9px Verdana, Geneva, sans-serif;
+}
+.back {clear:both;}
+.more-link, .more-link:visited {
+	display:block;
+	width:115px;
+	padding-left:28px;
+	margin:12px 0;
+	background:transparent url('images/morelink.png') no-repeat 0 1px;
+	font:italic 1em Arial, Helvetica, sans-serif;
+	font-weight:bold;
+	color:#737373;
+	clear:both;
+	float:right;
+}
+.more-link:hover {
+	color:#555;
+}
+
+/* images */
+.alignleft, .aligncenter, .alignright, .wp-post-image {border:1px solid #000;}
+.alignleft, .wp-post-image {float:left;	margin:6px 25px 0 0;}
+.alignright {float:right; margin:6px 0 0 25px;}
+.aligncenter {margin:6px auto 20px;	}
+p.wp-caption-text {
+	text-align:center;
+	margin:0 auto;
+	padding:0 10px 0 0;
+	font-size:11px;
+	line-height:16px;
+	color:#7D7D7D;
+}
+/* margins for image captions because WordPress automatically adds 10px width - annoying */
+div.alignleft {margin:6px 15px 0 0; float:left;}
+div.aligncenter {margin:6px auto 20px; overflow:hidden;}
+div.alignright {margin:6px 0 0 15px; float:right;}
+
+/* Author */
+#author-avatar {float:left; margin:5px 15px 0 0; padding:4px;}
+#author-description {margin-bottom:25px;}
+
+/* Widget Styling */
+.widget {
+	padding-bottom:25px;
+	/*border-bottom:1px solid #C7C7C7;*/
+	}
+
+/* Comments */
+#comments ol {margin:0; padding:0;}
+.commentlist {list-style: none;	margin: 0;}
+.commentgroup {background:#fff; margin-bottom:10px; padding:5px 0;}
+.comment-body {font-size:1em; padding:4px 0;}
+.cmeta {background-color:#ECECED; padding:3px 10px 3px 3px; vertical-align:middle; border-top:1px solid #D8D8DA; border-bottom:1px solid #D8D8DA;}
+.cname {font:normal 1.3em/1.5em Arial, Helvetica, sans-serif;}
+.cdate {font-size:.9em; line-height:.8em;}
+.cmoderation {background:#734848; color:#fff; font-style:oblique; padding:2px 5px;}
+img.avatar {padding:2px; border:1px solid #8F8F8F; background:#C9C9C9; float:left; margin:0 10px 0 0;}
+ul.children {margin-left:0; padding-left:20px;}
+
+
+/* Standard Form styles - please note these may conflict with any plugins that have their own styles */
+input[type=submit] {
+	vertical-align: middle;
+	line-height:1em;
+	padding:3px 13px;
+	background:url('images/buttonbg.png') repeat-x center top;
+	border:1px solid #cfcfcf;
+	color:#888;
+	}
+input[type=submit]:hover {
+	color:#333; cursor:pointer;
+	}
+input[type=text], textarea {
+	border: 1px solid #cfcfcf;
+	background: url("images/input_bg.png") no-repeat scroll 0 0 transparent;
+	padding:5px;
+	line-height:1em;
+	height:1.1em;
+	vertical-align: middle;
+}
+.back {/* return to previous page - more styles below in comments */
+	margin:20px 0 0;
+	}
+
+/* search */
+#searchform {margin-bottom:30px;}
+.screenReader, .screen-reader-text {left: -9999px; position: absolute; top: -9999px; }
+input, textarea {
+	font:normal 12px Arial, Helvetica, sans-serif;
+	color:#555;
+}
+#searchform #s {
+	width:185px;
+}
+#searchsubmit {
+	margin-left:2px;
+}
+
+
+/* form elements - comments */
+#commentform input[type=text] {
+	width:180px;
+	display:block;
+}
+#commentform input[type=submit] {
+	display:block;
+}
+#commentform textarea {
+	width:99%;
+	height:120px;
+	
+}
+#commentform label {
+	width:auto;
+}
+#commentform p {
+	margin:0 0 4px; 
+	padding:0; 
+	clear:both;
+}
+#commentform p.form-submit {
+	display:block; 
+	clear:both; 
+	height:50px;
+}
+.required {
+	color:#555;
+	font-weight: bold;
+}
+.comment-notes {
+	font-size:11px;
+	color:#98989F;
+	font-style:oblique;
+}
+.comment-reply-link, .back {
+	background:url('images/buttonbg.png') repeat-x center bottom;
+	display:block;
+	padding:0 13px;
+	height:20px;
+	width:auto;
+	float:left;
+	text-align:center;
+	font-size:.9em;
+	vertical-align:middle;
+	border:1px solid #cfcfcf;
+	color:#888;
+	}
+	
+
+/* Calendar Widget */
+#wp-calendar {width:100%;}
+#wp-calendar caption {font-weight: bold; color: #222; text-align: left; font-size:14px; padding-bottom: 4px;}
+#wp-calendar thead {font-size:11px;}
+#wp-calendar thead th {}
+#wp-calendar tbody {color: #aaa;}
+#wp-calendar tbody td {padding: 3px 0 2px; background: #f5f5f5; border:1px solid #fff; text-align: center;}
+#wp-calendar tbody .pad {background: none;}
+#wp-calendar tfoot #next {text-align: right;}	
+	
+	
+	
+.kwicks {
+	/* recommended styles for kwicks ul container */
+	list-style: none;
+	position: relative;
+	margin: 0;
+	padding: 0;
+}
+.kwickshadow {
+z-index: 10;
+background: url(images/kwicksshadow.png) repeat-y;
+position: absolute;
+left: 0px; /* make this right if you do not want the beveled style on images */
+height: 420px;
+width: 14px;
+}
+.kwicks li{
+	/* these are required, but the values are up to you (must be pixel) */
+	width: 240px;
+	height: 420px;
+
+	/*do not change these */
+	display: block;
+	overflow: hidden;
+	padding: 0;  /* if you need padding, do so with an inner div (or implement your own box-model hack) */
+}
+.kwicks.horizontal li {
+	/* This is optional and will be disregarded by the script.  However, it should be provided for non-JS enabled browsers. */
+	margin-right: 0; /*Set to same as spacing option. */	
+	float: left;
+}
+.kwicks.vertical  li{
+	/* This is optional and will be disregarded by the script.  However, it should be provided for non-JS enabled browsers. */
+	margin-bottom: 0; /*Set to same as spacing option. */	
+}
+
+#kwick_1 { 
+	background:url(images/image1.jpg) no-repeat 0 0;
+}
+#kwick_2 {
+	background:url(images/image2.jpg) no-repeat 0 0;
+}
+#kwick_3 {
+	background:url(images/image3.jpg) no-repeat 0 0;
+}
+#kwick_4 { 
+	background:url(images/image4.jpg) no-repeat 0 0;
+}
+.kwicks.horizontal #kwick_4 {
+	margin-right: none; /* cancel margin on last kiwck (if you set a margin above) */
+}
+.kwicks.vertical #kwick_4 {
+	margin-bottom: none; /* cancel margin on last kiwck (if you set a margin above) */
+}
+.kwicks a {
+	display:block; 
+	width:700px; 
+	height:420px;
+	}
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+#s3slider ul li {background:none; margin:0; padding:0;}
+.smore {
+	color:#fff; 
+	font:bold .9em Arial, Helvetica, sans-serif; 
+	font-style:italic; 
+	text-transform:uppercase; 
+	padding:0 5px;
+	}	
+#s3slider {
+   width: 960px; /* important to be same as image width */
+   height: 300px; /* important to be same as image height */
+   position: relative; /* important */
+   overflow: hidden; /* important */
+}
+
+#s3sliderContent {
+   width: 960px; /* important to be same as image width or wider */
+   position: absolute; /* important */
+   top: 0; /* important */
+   margin-left: 0; /* important */
+}
+
+.s3sliderImage {
+   float: left; /* important */
+   position: relative; /* important */
+   display: none; /* important */
+}
+
+.s3sliderImage span {
+   position: absolute; /* important */
+   left: 0;
+   font: 12px/18px Arial, Helvetica, sans-serif;
+   padding: 10px 13px;
+   width: 934px;
+   background-color: #000;
+   filter: alpha(opacity=70); /* here you can set the opacity of box with text */
+   -moz-opacity: 0.7; /* here you can set the opacity of box with text */
+   -khtml-opacity: 0.7; /* here you can set the opacity of box with text */
+   opacity: 0.7; /* here you can set the opacity of box with text */
+   color: #fff;
+   display: none; /* important */
+   bottom: 0;
+
+   /*
+       if you put
+       top: 0; -> the box with text will be shown at the top of the image
+       if you put
+       bottom: 0; -> the box with text will be shown at the bottom of the image
+   */
+}
+
+.clear {
+   clear: both;
+} 

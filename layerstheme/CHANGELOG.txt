@@ -1,0 +1,16 @@
+Keep a change log to describe all the changes made to program source files. The purpose of this is so that people investigating bugs in the future will know about the changes that might have introduced the bug. Often a new bug can be found by looking at what was recently changed. More importantly, change logs can help you eliminate conceptual inconsistencies between different parts of a program, by giving you a history of how the conflicting concepts arose and who they came from. 
+
+
+January 18, 2010 Pixel Theme Studio <http://www.pixelthemestudio.ca>
+     
+	- Added the Josefin Sans font for the headings (missing)
+
+
+January 17, 2010 Pixel Theme Studio <http://www.pixelthemestudio.ca>
+     
+	- Removed the Social Networking settings (meant for another theme)
+
+
+January 1, 2010 Pixel Theme Studio <http://www.pixelthemestudio.ca>
+     
+	- New Theme: Designed and developed theme
